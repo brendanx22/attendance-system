@@ -1,0 +1,91 @@
+ body {
+            background: linear-gradient(to top right, #e5e7eb, #4f46e5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .login-container {
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 60px 20px;
+            width: 100%;
+            max-width: 450px;
+        }
+
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .login-header h2 {
+            color: #333;
+            font-weight: 600;
+        }
+        .login-header p {
+            color: #666;
+        }
+        .form-control {
+            height: 50px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .btn-login {
+            background-color: #4f46e5;
+            color: white;
+            height: 50px;
+            border-radius: 10px;
+            font-weight: 600;
+            width: 100%;
+        }
+
+        .login-role {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .role-btn {
+            border: 2px solid #dee2e6;
+            border-radius: 10px;
+            padding: 10px 65px;
+            cursor: pointer;
+           transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .role-btn:hover {
+        background-color: #f8f9fa;
+        }
+
+        .role-btn.active {
+            color:  #4f46e5;
+            border-color:  #4f46e5;
+        }
+        .demo-credentials {
+            text-align: center;
+            margin-top: 20px;
+            color: #6c757d;
+            font-size: 14px;
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: #333;
+        }
+
+.btn-login:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.spinner-border {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+#loginError {
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
